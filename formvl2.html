@@ -1,0 +1,43 @@
+<html>
+<body bgcolor="#f7e790"><CENTER>
+<H1> LOGIN</H1></CENTER>
+<CENTER>
+<form name="Login">
+<table>
+<tr>
+<td>
+User Name</td><td><input type="text" name="uname">
+</td></tr>
+<tr><td>
+Password</td><td><input type="password" name="pwd">
+</td></tr>
+<tr><td>
+Re passwd</td><td><input type="password" name="repwd">
+</td></tr>
+<tr><td><td>
+<input type="button" value="login" name="btn" onclick="validate()">
+</td>
+</td></tr>
+</form>
+</CENTER>
+<script>
+function validate()
+{
+var a=document.Login.uname.value;
+var b=document.Login.pwd.value;
+var c=document.Login.repwd.value;
+console.log(a+b+c);
+if(a==""|| b==""|| c=="")
+alert("field cannot be blank");
+else if(!(b.length<6)&& (b.length>10))
+alert("password should inbetween 6 and 10");
+else if(b!=c)
+alert("password not match");
+else
+alert("login successfully");
+}
+validate();
+</script>
+</body>
+</html>
+

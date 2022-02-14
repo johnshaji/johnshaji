@@ -1,0 +1,56 @@
+<html>
+<body>
+<h1 id="demo" onclick="fun_name()">this is heading</h1><span id="sp"></span>
+<h2 id="head2" onmouseover="number2()">click here</h2>
+<p id="para"></p>
+<p id="para2" onmouseout="number3()">paragraph</p>
+<script>
+
+function fun_name()
+{
+var a=document.getElementById("demo");
+a.innerHTML="this is javascript";
+a.style.color="blue";
+a.style.fontStyle="italic";
+a.style.backgroundColor="yellow";
+var b=document.getElementById("para");
+var c=document.getElementById("sp");
+b.innerHTML="is a programming language that conforms to the ECMAScript specification.[11] JavaScript is high-level, often just-in-time compiled and multi-paradigm. It has dynamic typing, prototype-based object-orientation and first-class functions.";
+c.innerHTML='Hello';
+}
+function number2()
+{
+var d=document.getElementById("head2");
+d.innerHTML="dont click here";
+d.style.color="green";
+d.style.fontStyle="italic";
+d.style.backgroundColor="yellow";
+
+}
+
+function number3()
+{
+var e=document.getElementById("para2");
+e.innerHTML="dont click here";
+e.style.color="green";
+e.style.fontStyle="italic";
+e.style.backgroundColor="yellow";
+
+}
+
+
+
+
+
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
